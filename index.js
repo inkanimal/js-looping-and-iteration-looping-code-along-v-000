@@ -11,11 +11,12 @@ function printBadges(badges) {
  
 printBadges(badges);
 
-
 function tailsNeverFails() {
-    return Math.random() >= 0.5;
-}
- 
-while (tailsNeverFails()) {
-    console.log('You got tails in a row!');
+  let counter = 0;
+  while(Math.random() >= 0.5) {
+      counter++;
+  }
+  let returnMessage = "You got " + counter + " tails in a row!";
+  return returnMessage;
+  console.log("You got " + counter + " tails in a row!");
 }
